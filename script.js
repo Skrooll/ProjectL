@@ -23,6 +23,7 @@ function main() {
   const timer = new Timer();
   const timerSpan = document.getElementById('timer');
   let days = ()=>{
+    let time = timer.getTime();
     let d = time.days % 10;
     if (time.days>10 && time.days<20) return 'дней';
     if (d==1) return 'день';
@@ -30,6 +31,7 @@ function main() {
     return 'дней';
   }
   let hours = ()=>{
+    let time = timer.getTime();
     let d = time.hours % 10;
     if (time.hours>10 && time.hours<20) return 'часов';
     if (d==1) return 'час';
@@ -37,6 +39,7 @@ function main() {
     return 'часов';
   }
   let minutes = ()=>{
+    let time = timer.getTime();
     let d = time.minutes % 10;
     if (time.minutes>10 && time.minutes<20) return 'минут';
     if (d==1) return 'минута';
