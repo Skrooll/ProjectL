@@ -1,5 +1,5 @@
 function Timer() {
-  const from = new Date('December 17, 2020 00:00:00');
+  const from = new Date('January 21, 2021 15:14:00');
   this.getCurrentDate = ()=>{
     return new Date();
   }
